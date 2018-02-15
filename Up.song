@@ -1,60 +1,35 @@
 # Married Life - Michael Ginacho
 #https://musescore.com/user/1596896/scores/715646
-use_bpm 90
+use_bpm 135
 use_synth:piano
 1.times do
   #first
   play:f5
-  sleep 0.45
+  sleep 0.5
   play:a5
-  sleep 0.45
+  sleep 0.5
   play:f5
-  sleep 0.45
+  sleep 0.5
   play :e5
-  sleep 2
-  #second
+  sleep 4
+  play :r
+  sleep 0.5
   play:f5
-  sleep 0.45
+  sleep 0.5
   play:a5
-  sleep 0.45
+  sleep 0.5
   play:f5
-  sleep 0.45
+  sleep 0.5
   play :d5
-  sleep 2
-  #third
-  play:d5
-  sleep 0.45
-  play:f5
-  sleep 0.45
-  play:d5
-  sleep 0.45
-  play :c5
-  sleep 2
-  #fourth
-  play:c5
-  sleep 0.45
-  play:a5
-  sleep 0.45
-  play:g5
   sleep 1
-  play :c5
-  sleep 0.45
-  #fifth
-  play:a5
-  sleep 0.45
-  play:g5
-  sleep 0.45
-  play:f5
-  sleep 0.45
-  play :d5
-  sleep 2
-  #sixth
+  play :r
+  sleep 0.5
   play:d5
-  sleep 0.45
-  play:g5
-  sleep 0.45
+  sleep 0.5
   play:f5
-  sleep 0.45
-  play :e5
+  sleep 0.5
+  play:d5
+  sleep 0.5
+  play :c5
   sleep 2
 end
