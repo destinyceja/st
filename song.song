@@ -3,34 +3,35 @@
 #https://musescore.com/user/1596896/scores/715646
 use_bpm 135
 use_synth:piano
-x=1
+x=0
 1.times do
-  play:f5  sustain: x+1
+  play:f5  amp: x
   sleep 0.5
-  play:a5  sustain: x+1
+  play:a5  amp: x
   sleep 0.5
-  play:f5  sustain: x+1
+  play:f5  amp: x
   sleep 0.5
-  play :e5  sustain: x+1
+  play :e5  amp: x
   sleep 4
   play :r
   sleep 0.5
-  play:f5  sustain: x+1
+  play:f5  amp: x
   sleep 0.5
-  play:a5  sustain: x+1
+  play:a5  amp: x
   sleep 0.5
   play:f5
   sleep 0.5
-  play :d5  sustain: x+1
+  play :d5  amp: x
   sleep 1
-  play :r  
+  play :r
   sleep 0.5
-  play:d5  sustain: x+1
+  play:d5  amp: x
   sleep 0.5
-  play:f5  sustain: x+1
+  play:f5  amp: x
   sleep 0.5
-  play:d5  sustain: x+1
+  play:d5  amp: x
   sleep 0.5
-  play :c5  sustain: x+1
+  play :c5  amp: x
   sleep 2
+  x= x+2
 end
