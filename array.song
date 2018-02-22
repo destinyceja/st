@@ -2,9 +2,9 @@
 #https://musescore.com/user/1596896/scores/715646
 use_bpm 135
 use_synth:piano
-sustain: 2
+use_synth_defaults sustain:2
 my_array = [:f5,:a5,:f5,:e5,:r,:f5,:a5,:f5,:d5,:r,:d5,:f5,:d5,:c5]
-my_sleeps = [0.5, 0.5, 0.5, 4, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 2]
+my_sleeps = [0.5, 0.5, 0.5, 4, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 2]
 live_loop :up do
   index=0
   4.times do
@@ -13,5 +13,3 @@ live_loop :up do
     index = index + 1
   end
 end
-
-
