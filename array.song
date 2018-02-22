@@ -2,35 +2,16 @@
 #https://musescore.com/user/1596896/scores/715646
 use_bpm 135
 use_synth:piano
+sustain: 2
 my_array = [:f5,:a5,:f5,:e5,:r,:f5,:a5,:f5,:d5,:r,:d5,:f5,:d5,:c5]
-1.times do
-  #first
-  play:f5
-  sleep 0.5
-  play:a5
-  sleep 0.5
-  play:f5
-  sleep 0.5
-  play :e5
-  sleep 4
-  play :r
-  sleep 0.5
-  play:f5
-  sleep 0.5
-  play:a5
-  sleep 0.5
-  play:f5
-  sleep 0.5
-  play :d5
-  sleep 1
-  play :r
-  sleep 0.5
-  play:d5
-  sleep 0.5
-  play:f5
-  sleep 0.5
-  play:d5
-  sleep 0.5
-  play :c5
-  sleep 2
+my_sleeps = [0.5, 0.5, 0.5, 4, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 2]
+live_loop :up do
+  index=0
+  4.times do
+    play my_array[index]
+    sleep my_sleeps[index]
+    index = index + 1
+  end
 end
+
+
