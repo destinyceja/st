@@ -7,7 +7,7 @@ my_array = [:f5,:a5,:f5,:e5,:r,:f5,:a5,:f5,:d5,:r,:d5,:f5,:d5,:c5]
 my_sleeps = [0.5, 0.5, 0.5, 4, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 2]
 live_loop :up do
   index=0
-  4.times do
+  14.times do
     play my_array[index]
     sleep my_sleeps[index]
     index = index + 1
