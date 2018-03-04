@@ -3,10 +3,10 @@
 use_bpm 135
 use_synth:piano
 use_synth_defaults sustain:2
-a = [:f5,:a5,:f5,:e5,:r,:f5,:a5,:f5,:d5,:r,:d5,:f5,:d5,:c5]#notes that correspond to line 9
+a = [:f5,:a5,:f5,:e5,:r,:f5,:a5,:f5,:d5,:r,:d5,:f5,:d5,:c5] #notes that correspond to line 9
 live_loop :up do
   b = rrand_i(0.5, 2)
   c= a.choose
-  play c # notes in line 6 are playing, they are random but within the a5-g5 range
+  play c  # notes in line 6 are playing, they are random but within the a5-g5 range
   sleep b # choosing a sleep beween 0.5 and 2 everytime the loop starts back up.. line 8 is what shows its random between those two values
 end
