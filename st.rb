@@ -12,7 +12,7 @@ use_bpm 160
 use_synth :saw
 
 #define your function with parameters
-define :play_eighth_notes do
+define :play_eighth_notes do #the play_eighth_notes is what will be input after the notesin order for them to play. (line 37)
   
   # First set of eighth notes
   play :c2
@@ -34,4 +34,4 @@ define :play_eighth_notes do
   play :e2
   sleep 0.5
 end
-play_eighth_notes
+play_eighth_notes #this is what allows the notes in the define function to play. 
